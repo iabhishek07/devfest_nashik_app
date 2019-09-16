@@ -21,7 +21,7 @@ class _ConfigPageState extends State<ConfigPage> {
   setupApp() {
     configBloc = ConfigBloc();
     configBloc.darkModeOn =
-        Devfest.prefs.getBool(Devfest.darkModePref) ?? true;
+        Devfest.prefs.getBool(Devfest.darkModePref) ?? false;
   }
 
   @override
