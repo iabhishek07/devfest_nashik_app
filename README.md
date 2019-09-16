@@ -1,1 +1,0 @@
-# devfest_nashik_app
