@@ -1,3 +1,4 @@
+import 'package:devfest_nashik_app/home/home_page.dart';
 import 'package:devfest_nashik_app/utils/Devfest.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -52,10 +53,8 @@ class _ConfigPageState extends State<ConfigPage> {
                 elevation: 0.0,
               ),
             ),
-            home: Scaffold(
-              appBar: AppBar(),
-              body: Container(),
-            ),
+            home: HomePage(),
+            
           );
         },
       ),
