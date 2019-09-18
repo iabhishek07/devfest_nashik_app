@@ -1,4 +1,6 @@
+import 'package:devfest_nashik_app/agenda/agenda_page.dart';
 import 'package:devfest_nashik_app/home/home_page.dart';
+import 'package:devfest_nashik_app/speakers/speaker_page.dart';
 import 'package:devfest_nashik_app/utils/Devfest.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -54,7 +56,11 @@ class _ConfigPageState extends State<ConfigPage> {
               ),
             ),
             home: HomePage(),
-            
+            routes: {
+              HomePage.routeName:(context)=>HomePage(),
+              AgendaPage.routeName:(context)=>AgendaPage(),
+              SpeakersPage.routeName:(context)=>SpeakersPage(),
+            },
           );
         },
       ),
